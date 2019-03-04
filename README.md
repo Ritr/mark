@@ -91,13 +91,48 @@
         }
         //注意此处
         Man.prototype = Object.create(Person.prototype);
+        Man.prototype.constructor = Man;
         var man1=new Man("Davin");
         > man1.name
         >"Davin"
         > man1.getName()
         >"Davin"
     ```
+    >ES6继承
     
+    ```
+    class Person{
+          //static sCount=0 //1
+          constructor(name){
+             this.name=name; 
+             this.sCount++;
+          }
+          //实例方法 //2
+          getName(){
+           console.log(this.name)
+          }
+          static sTest(){
+            console.log("static method test")
+          }
+        }
+        
+        class Man extends Person{
+          constructor(name){
+            super(name)//3
+            this.sex="male"
+          }
+        }
+        var man=new Man("Davin")
+        man.getName()
+        //man.sTest()
+        Man.sTest()//4
+        输出结果：
+        Davin
+        static method test
+    ```
+    还是用TypeScript吧，强行安利
+    [TypeScript](https://www.tslang.cn/),
+    再强行安利[angular](https://angular.cn)哈哈
   - 解决回调地狱
   - this\
   this即是句柄，谁执行谁就是this
