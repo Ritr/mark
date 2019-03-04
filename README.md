@@ -6,6 +6,98 @@
     >由于 JS 没有'类', 所以采用了原型的方式实现继承，正确的说法是引用或者委托，因为对象之间的关系不是复制，而是委托。在查找属性的时候，引用（委托）原型对象的属性，也就是我们常说的原型继承。
     
     [JavaScript 继承](https://www.jianshu.com/p/5cb692658704)
+    >原型继承
+    
+    ```
+        function Person(name){
+         this.name=name;
+         this.className="person" 
+        }
+        Person.prototype.getClassName=function(){
+         console.log(this.className)
+        }
+        
+        function Man(){
+        }
+        
+        Man.prototype=new Person();//1
+        //Man.prototype=new Person("Davin");//2
+        var man=new Man;
+        >man.getClassName()
+        >"person"
+        >man instanceof Person
+        >true
+    ```
+
+    >构造函数继承
+    
+    ```
+    function Person(name){
+     this.name=name;
+     this.className="person" 
+    }
+    Person.prototype.getName=function(){
+     console.log(this.name)
+    }
+    function Man(name){
+      Person.apply(this,arguments)
+    }
+    var man1=new Man("Davin");
+    var man2=new Man("Jack");
+    >man1.name
+    >"Davin"
+    >man2.name
+    >"Jack"
+    >man1.getName() //1 报错
+    >man1 instanceof Person
+    >true
+    
+    ```
+    
+    >组合继承
+    
+    ```
+        function Person(name){
+         this.name=name||"default name"; //1
+         this.className="person" 
+        }
+        Person.prototype.getName=function(){
+         console.log(this.name)
+        }
+        function Man(name){
+          Person.apply(this,arguments)
+        }
+        //继承原型
+        Man.prototype = new Person();
+        var man1=new Man("Davin");
+        > man1.name
+        >"Davin"
+        > man1.getName()
+        >"Davin"
+    ```
+    
+    >寄生组合继承
+    
+    ```
+        function Person(name){
+         this.name=name; //1
+         this.className="person" 
+        }
+        Person.prototype.getName=function(){
+         console.log(this.name)
+        }
+        function Man(name){
+          Person.apply(this,arguments)
+        }
+        //注意此处
+        Man.prototype = Object.create(Person.prototype);
+        var man1=new Man("Davin");
+        > man1.name
+        >"Davin"
+        > man1.getName()
+        >"Davin"
+    ```
+    
   - 解决回调地狱
   - this\
   this即是句柄，谁执行谁就是this
@@ -77,7 +169,7 @@
   HTTPS，是 HTTP over SSL 的意思。SSL 协议是 Netscape 在 1995 年首次提出的用于解决传输层安全问题的网络协议，其核心是基于公钥密码学理论实现了对服务器身份认证、数据的私密性保护以及对数据完整性的校验等功能。
 
 
-一些面试题
+
 4. promise与fetch区别
 5. react组件的生命周期
 6. UI组件与容器组件
