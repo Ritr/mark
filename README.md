@@ -134,9 +134,10 @@
     [TypeScript](https://www.tslang.cn/),
     再强行安利[angular](https://angular.cn)哈哈
   - 解决回调地狱
-    > Promise
-    
-    > async await
+  
+    [Promise](https://juejin.im/post/5aa7868b6fb9a028dd4de672)
+
+    [async await](https://segmentfault.com/a/1190000013292562?utm_source=channel-newest#articleHeader6)
     
   - this\
   this即是句柄，谁执行谁就是this
