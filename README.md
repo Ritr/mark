@@ -135,7 +135,7 @@
     再强行安利[angular](https://angular.cn)哈哈
   - 解决回调地狱
   
-    [Promise](https://juejin.im/post/5aa7868b6fb9a028dd4de672)
+    [这个讲解很清晰：Promise](https://segmentfault.com/a/1190000009478377?utm_source=tag-newest)
 
     [async await](https://segmentfault.com/a/1190000013292562?utm_source=channel-newest#articleHeader6)
     
@@ -209,16 +209,31 @@
   HTTPS，是 HTTP over SSL 的意思。SSL 协议是 Netscape 在 1995 年首次提出的用于解决传输层安全问题的网络协议，其核心是基于公钥密码学理论实现了对服务器身份认证、数据的私密性保护以及对数据完整性的校验等功能。
 
 
-
-4. promise与fetch区别
-5. react组件的生命周期
-6. UI组件与容器组件
-7. redux/vuex
-8. 前端性能优化
-9. 浏览器存储原理
-10. webpack配置
-11. react路由/vue-router
-12. promise跨域
-13. vue双向绑定原理
-14. vue和react的区别
+- promise与fetch区别
+- react组件的生命周期
+- UI组件与容器组件
+- redux/vuex
+- 前端性能优化
+- 浏览器存储原理
+- webpack配置
+- react路由/vue-router
+- promise跨域
+- vue双向绑定原理
+- vue和react的区别
+- 对原型链的理解？prototype上都有哪些属性
+- 为什么使用继承
+- jQuery addClass()的内部实现
+- jQuery的优缺点，与vue的不同，vue的优缺点？
+- vue v-modle实现原理
+- http 缓存
+- cookie可设置哪些属性？httponly?
+- 登录后，前端做了哪些工作，如何得知已登录
+- xss
+- setTimeout时间延迟为何不准
+- 事件循环述，宏任务和微任务有什么区别？
+- let const var作用域
+- 项目结构
+- 数组排重，多种方法
+- 实现sum(1,2,3,4..n)转化为 sum(1)(2)(3)(4)...(n)
+- node 使用场景，express如何实现304
 
