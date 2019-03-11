@@ -135,7 +135,7 @@
     再强行安利[angular](https://angular.cn)哈哈
   - 解决回调地狱
   
-    [这个讲解很清晰：Promise](https://segmentfault.com/a/1190000009478377?utm_source=tag-newest)
+    [Promise](https://segmentfault.com/a/1190000009478377?utm_source=tag-newest)
 
     [async await](https://segmentfault.com/a/1190000013292562?utm_source=channel-newest#articleHeader6)
     
