@@ -135,7 +135,7 @@
     再强行安利[angular](https://angular.cn)哈哈
   - 解决回调地狱
   
-    [Promise](https://segmentfault.com/a/1190000009478377?utm_source=tag-newest)
+    [这个讲解很清晰：Promise](https://segmentfault.com/a/1190000009478377?utm_source=tag-newest)
 
     [async await](https://segmentfault.com/a/1190000013292562?utm_source=channel-newest#articleHeader6)
     
@@ -179,31 +179,32 @@
     　event.cancelBubble = true;
     ```
 
-  - 事件委托
+   - 事件委托
     
     事件委托通常会用在处理动态元素的事件上，利用的原理就是事件冒泡。例如父元素parent的子元素child是动态生成的，如果要监听child元素的事件，可以通过在父元素事件内判断事件源是否是child元素，由此来执行对应的函数。这种方式通常用在以jquery为主的技术栈的项目，如果你使用的是mvvm一类框架，那么使用到事件委托的机会可能会很少
-- **BOM**
-  - location
-  - history
-  - Navigator
-  - cookie
+
 - **css**
   - 标准盒模型
+  
+  ![image](https://images2015.cnblogs.com/blog/749461/201611/749461-20161108203732874-400170050.png)
+
   - IE盒模型
-  - flex布局
-  - 垂直居中
-  - 水平居中
-  - 定位
-  - css继承
-  - 文本省略号
-  - 多行文本省略号
-  - 双边距重叠
+
+ ![image](https://images2015.cnblogs.com/blog/749461/201611/749461-20161108205109358-299654070.png)
+
+ - 兼容写法
+ 
+    头部加入
+
+    ```
+    <!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
+    ```
+
 - **html5**
-  - sessionStorage
-  - localStorage
   - web worker
   - webscoket
 - **css3**
+  - flex布局
   - 帧动画animation
   - 过渡transition
   - 形变transform
@@ -270,4 +271,5 @@
 - 数组排重，多种方法
 - 实现sum(1,2,3,4..n)转化为 sum(1)(2)(3)(4)...(n)
 - node 使用场景，express如何实现304
+- 数组合并同类项，根据id
 
