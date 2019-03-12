@@ -184,18 +184,18 @@
     事件委托通常会用在处理动态元素的事件上，利用的原理就是事件冒泡。例如父元素parent的子元素child是动态生成的，如果要监听child元素的事件，可以通过在父元素事件内判断事件源是否是child元素，由此来执行对应的函数。这种方式通常用在以jquery为主的技术栈的项目，如果你使用的是mvvm一类框架，那么使用到事件委托的机会可能会很少
 
 - **css**
+
   - 标准盒模型
   
-  ![image](https://images2015.cnblogs.com/blog/749461/201611/749461-20161108203732874-400170050.png)
+    ![image](https://images2015.cnblogs.com/blog/749461/201611/749461-20161108203732874-400170050.png)
 
   - IE盒模型
 
- ![image](https://images2015.cnblogs.com/blog/749461/201611/749461-20161108205109358-299654070.png)
+    ![image](https://images2015.cnblogs.com/blog/749461/201611/749461-20161108205109358-299654070.png)
 
- - 兼容写法
- 
+  - 兼容写法
+  
     头部加入
-
     ```
     <!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
     ```
