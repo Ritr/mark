@@ -201,8 +201,21 @@
     ```
 
 - **html5**
-  - web worker
-  - webscoket
+
+  - Web Worker
+    
+    [Web Worker 使用教程](http://www.ruanyifeng.com/blog/2018/07/web-worker.html)
+
+    注意，这种多线程能力不是JavaScript语言原生具有的，而是浏览器宿主环境提供的。
+    
+    还有一个有意思的东西 shared worker，可以多页面共享一个woker以此来实现页面之间的通信
+
+  - WebSocket
+    
+    >WebSocket 是 HTML5 开始提供的一种在单个 TCP 连接上进行全双工通讯的协议。
+    WebSocket 使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。在 WebSocket API 中，浏览器和服务器只需要完成一次握手，两者之间就直接可以创建持久性的连接，并进行双向数据传输。
+    
+    需要注意一点，服务端也要支持WebSocket。在node环境下可以试试 `socket.io`
 - **css3**
   - flex布局
   - 帧动画animation
