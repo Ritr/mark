@@ -139,14 +139,17 @@
 
     [async await](https://segmentfault.com/a/1190000013292562?utm_source=channel-newest#articleHeader6)
     
-  - this\
-  [tihs](https://segmentfault.com/a/1190000017452514)\
-  this是Javascript语言的一个关键字。 它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用。随着函数使用场合的不同，this的值会发生变化。但是有一个总的原则，那就是this指的是，调用函数的那个对象
+  - this
+  
+    [tihs](https://segmentfault.com/a/1190000017452514)\
+    this是Javascript语言的一个关键字。 它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用。随着函数使用场合的不同，this的值会发生变化。但是有一个总的原则，那就是this指的是，调用函数的那个对象
     
   - 深拷贝浅拷贝
   
-    深拷贝是递归复制了一个对象的属性和值到另一个对象上\
+    深拷贝是递归复制了一个对象的属性和值到另一个对象上
+
     浅拷贝相当于对象引用
+    
   - 箭头函数
     
     没找到比较好的中文资料，看MDN吧
@@ -216,21 +219,49 @@
     WebSocket 使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。在 WebSocket API 中，浏览器和服务器只需要完成一次握手，两者之间就直接可以创建持久性的连接，并进行双向数据传输。
     
     需要注意一点，服务端也要支持WebSocket。在node环境下可以试试 `socket.io`
+
 - **css3**
+
   - flex布局
-  - 帧动画animation
-  - 过渡transition
-  - 形变transform
-  - 字体@font-face
-- **vue**
-- **react**
-- **webpack**
+    
+    掌握flex关键在于掌握两个轴：main axis和cross axis.
+
+    main aixs即是主轴，cross axis即是和主轴交叉的轴，可以叫它交叉轴，实在不好翻译。
+    
+    注意当main aixs方向改变时（水平->垂直 或者 垂直->水平），cross axis也会随着改变
+
+    [在线demo](https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/)
+
+  - animation
+    
+    animation可以理解为像电影胶卷一样，让元素在某个时间段处于某种表现方式
+
+    [https://developer.mozilla.org/zh-CN/docs/Web/CSS/animation](https://developer.mozilla.org/zh-CN/docs/Web/CSS/animation)
+    
+    
+  - transition
+  
+    trabsition相当于只有两个关键帧的animation，一个是开始状态一个是结束状态。
+
+    [https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition)
+    
+  - transform
+    
+    transform是干嘛的呢？它是控制元素的缩放，旋转，位移等属性的。transform使元素变成了舞蹈家。
+    [https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)
+
+  - @font-face
+ 
+    为什么要把字体列出来呢？因为有了这个神器，网页中的图标都被解放了！将图标转换成矢量字体，或者直接用图标（字体）库，实现效果杠杠的！简直就是健康美味，好吃不贵！
+    
+    [https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face](https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face)
+
 - **http、https**
   - http和https的区别 
   - get请求的误区
   - get和post的区别
   - 状态码
-- **restful** 
+- **restful**
 - **优化**
   - 减少请求次数\
   合并图片、js、css
