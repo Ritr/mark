@@ -238,7 +238,6 @@
 
     [https://developer.mozilla.org/zh-CN/docs/Web/CSS/animation](https://developer.mozilla.org/zh-CN/docs/Web/CSS/animation)
     
-    
   - transition
   
     trabsition相当于只有两个关键帧的animation，一个是开始状态一个是结束状态。
@@ -256,16 +255,16 @@
     
     [https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face](https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face)
 
-- **http、https**
-  - http和https的区别 
-  - get请求的误区
-  - get和post的区别
-  - 状态码
-- **restful**
+- **RESTful和状态码**
+    
+    RESTful是一种风格而不是规范，具体API设计还要结合本身的开发情况来考虑
+    
+    [RESTful API 最佳实践](http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html)
+    
 - **优化**
   - 减少请求次数\
   合并图片、js、css
-  - 缩小请求包体\
+  - 减少请求体积\
   压缩图片、js、css
   - 懒加载\
   对非必须立刻展示的内容，延迟加载或者懒加载（需要时再加载）
@@ -274,46 +273,7 @@
   - 缓存\
   首页静态化，redis缓存，网站缓存，CDN缓存，客户端缓存。
 - **工程化**  
-  - 模块化
-  - 标准化
-  - 自动化
-- **前端安全**
-  - XSS跨站攻击\
-  XSS指的是攻击者漏洞，向 Web 页面中注入恶意代码，当用户浏览该页之时，注入的代码会被执行，从而达到攻击的特殊目的。
-  - http劫持
-  - DNS劫持
-  - HTTPS 与 CSP\
-  CSP 即是 Content Security Policy，翻译为内容安全策略。这个规范与内容安全有关，主要是用来定义页面可以加载哪些资源，减少 XSS 的发生。\
-  能够实施 HTTP 劫持的根本原因，是 HTTP 协议没有办法对通信对方的身份进行校验以及对数据完整性进行校验。如果能解决这个问题，则劫持将无法轻易发生。\
-  HTTPS，是 HTTP over SSL 的意思。SSL 协议是 Netscape 在 1995 年首次提出的用于解决传输层安全问题的网络协议，其核心是基于公钥密码学理论实现了对服务器身份认证、数据的私密性保护以及对数据完整性的校验等功能。
 
+   工程化是必须的
 
-- promise与fetch区别
-- react组件的生命周期
-- UI组件与容器组件
-- redux/vuex
-- 前端性能优化
-- 浏览器存储原理
-- webpack配置
-- react路由/vue-router
-- promise跨域
-- vue双向绑定原理
-- vue和react的区别
-- 对原型链的理解？prototype上都有哪些属性
-- 为什么使用继承
-- jQuery addClass()的内部实现
-- jQuery的优缺点，与vue的不同，vue的优缺点？
-- vue v-modle实现原理
-- http 缓存
-- cookie可设置哪些属性？httponly?
-- 登录后，前端做了哪些工作，如何得知已登录
-- xss
-- setTimeout时间延迟为何不准
-- 事件循环述，宏任务和微任务有什么区别？
-- let const var作用域
-- 项目结构
-- 数组排重，多种方法
-- 实现sum(1,2,3,4..n)转化为 sum(1)(2)(3)(4)...(n)
-- node 使用场景，express如何实现304
-- 数组合并同类项，根据id
-
+   [https://roshanca.com/2017/front-end-engineering-system/](https://note.youdao.com/)
