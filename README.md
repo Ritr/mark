@@ -277,3 +277,101 @@
    工程化是必须的
 
    [https://roshanca.com/2017/front-end-engineering-system/](https://roshanca.com/2017/front-end-engineering-system/)
+### http和https
+
+[链接一](http://www.mahaixiang.cn/internet/1233.html)
+
+[链接二](https://juejin.im/post/5af557a3f265da0b9265a498#heading-42)
+
+### DOM事件
+[深入理解DOM事件机制](https://juejin.im/post/5c71e80d51882562547bb0ce#heading-22)
+
+### js执行机制
+
+[这一次，彻底弄懂 JavaScript 执行机制](https://juejin.im/post/59e85eebf265da430d571f89)
+
+### Promise
+[面试精选之Promise](https://juejin.im/post/5b31a4b7f265da595725f322)
+
+### js数组方法总览
+
+[js数组方法总览](https://juejin.im/post/5bb753bd6fb9a05d2272b673)
+
+### cookie、session、localStorage、sessionStorage
+
+[一文理解 cookie、localStorage、sessionStorage、session](https://juejin.im/post/5d82e46a51882556ba55e6a5#heading-18)
+
+[localstorage 必知必会](https://juejin.im/post/5a9fcc5e51882555602074e3#heading-6)
+
+**localstorage容量限制**
+
+目前业界基本上统一为5M。
+
+**cookie大小和数量**
+
+cookie 的总数量没有限制，但是每个域名的COOKIE 数量和每个COOKIE 的大小是有限制的！
+
+IE 每个域名限制为50 个。Firefox 每个域名cookie 限制为50 个。
+
+Opera 每个域名cookie 限制为30 个。
+
+Safari/webkit 貌似没有cookie 限制。
+
+但是假如cookie 很多，则会使header大小超过服务器的处理的限制，会导致错误发生。
+
+不同浏览器间每个cookie 文件大小也不同
+
+Firefox 和safari 是4097 个字节，包括名（name）、值（value）和等号。
+
+Opera 是4096 个字节，包括：名（name）、值（value）和等号。
+
+IE 是4095 个字节，包括：名（name）、值（value）和等号。
+
+记住最大4K
+
+### css预处理语言
+
+[sass](https://www.sass.hk/guide/)
+
+[less](http://lesscss.cn/)
+
+### css选择器
+
+[css选择器](http://note.youdao.com/noteshare?id=46ea0a87d796bace083043735edd6b03&sub=2A8EB3A6438D4593ABEB907B49DD4C00)
+
+
+
+### css权重
+[你对CSS权重真的足够了解吗？](https://juejin.im/post/5afa98bf51882542c832e5ec)
+
+### css盒模型
+
+  - 标准盒模型
+  
+    ![image](https://images2015.cnblogs.com/blog/749461/201611/749461-20161108203732874-400170050.png)
+
+  - IE盒模型
+
+    ![image](https://images2015.cnblogs.com/blog/749461/201611/749461-20161108205109358-299654070.png)
+
+  - 兼容写法
+  
+    头部加入，采用标准盒模型
+    ```
+    <!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
+    ```
+### flex布局
+[一劳永逸的搞定 flex 布局](https://juejin.im/post/58e3a5a0a0bb9f0069fc16bb)
+
+### webpack
+
+[webpack官网](https://www.webpackjs.com/)
+
+[B站珠峰架构-webpack](https://www.bilibili.com/video/av51693431?from=search&seid=13071479149774343245)
+
+### js优化问题
+
+### js变量、函数、数据类型转换和比较、作用域、作用域链、闭包
+
+在javascript权威指南里
+
